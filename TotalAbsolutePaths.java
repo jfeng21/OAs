@@ -38,7 +38,7 @@ public static int LengthOfPath(String S) {
                     }
             else{
                //+1 here because a "/" needs to be add before each directory   eg: /dir1/dir12
-            int len = s.replaceAll("\t", "").length() + 1;
+            int len = s.replaceAll(" ", "").length() + 1;
                 
                curLen += len;
 
@@ -52,7 +52,7 @@ public static int LengthOfPath(String S) {
         
 }
  private static int countLevel(String s){
-        String cur = s.replaceAll("\t", "");
+        String cur = s.replaceAll(" ", "");
         
          int len = s.length() - cur.length();
           System.out.println(" level " + len+":" + cur);
@@ -63,7 +63,7 @@ public static int LengthOfPath(String S) {
 
 public static void main(String[] args) {
 
-        String s = "dir1\n\tdir11\n\tdir12\n\t\tfile.jpeg\n\t\tdir121\n\t\tfile1.txt\ndir2\n\tfile2.gif";
+        String s = "dir1\n dir11\n dir12\n  file.jpeg\n  dir121\n  file1.txt\ndir2\n file2.gif";
 
         int res = LengthOfPath(s);
       
