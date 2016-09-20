@@ -1,12 +1,14 @@
 /*
-   you are given an integer x, duplicate a single number and find max one
-   for instance:  x = 1254
-    * 11254  
-    * 12254  
-    * 12554
-    * 12544
+   you are given an integer x, delete a single number in a adjacent pair and find min one
+   for instance:  x = 233614
+    33614
+23614
+23614
+23364
+23364
 
-    return max :  12554
+
+    return min :  23364
  */
 public class FindMin {
     
