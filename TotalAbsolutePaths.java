@@ -26,7 +26,7 @@ public static int LengthOfPath(String S) {
             
             while(stack.size() > lev){
               curLen -= stack.pop();
-            //   curLen = stack.peek();
+        
             }
             
              //if s contains".jpeg or .png or gif", we have found a image file!
